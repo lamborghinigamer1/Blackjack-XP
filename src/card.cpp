@@ -49,6 +49,7 @@ bool Card::validateSuit()
     changeto[2] = "\x04";
     changeto[3] = "\x05";
 #endif
+    ;
     for (int i = 0; i < 4; i++)
     {
         if (this->suit == validsuit[i])
