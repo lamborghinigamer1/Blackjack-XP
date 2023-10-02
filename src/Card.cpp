@@ -1,4 +1,4 @@
-#include "card.h"
+#include "Card.h"
 
 Card::Card(std::string suit, std::string value)
 {
@@ -6,6 +6,10 @@ Card::Card(std::string suit, std::string value)
     this->value = value;
     this->validateSuit();
     this->validateValue();
+}
+
+Card::Card()
+{
 }
 
 std::string Card::show()

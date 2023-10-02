@@ -8,6 +8,7 @@ class Card
 {
 public:
     Card(std::string suit, std::string value);
+    Card();
     std::string show();
     int score(bool highace);
 
