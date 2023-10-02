@@ -6,7 +6,7 @@ prepare:
 	mkdir -p target
 
 build: $(SRC)
-	g++ $(SRC) -o target/blackjack
+	g++ -std=c++11 $(SRC) -o target/blackjack
 
 clean:
 	rm -rf target
