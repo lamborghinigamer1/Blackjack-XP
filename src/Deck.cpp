@@ -29,10 +29,9 @@ Card Deck::drawCard()
     }
 
     std::random_device rd;
-    std::mt19937 rng(rd());
     std::uniform_int_distribution<int> distribution(0, numCards - 1);
 
-    int random_number = distribution(rng);
+    int random_number = distribution(rd);
     Card chosencard = cards[random_number];
 
     for (int i = random_number; i < numCards - 1; ++i)
