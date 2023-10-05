@@ -34,7 +34,7 @@ Card Deck::drawCard()
     int random_number = distribution(rd);
     Card chosencard = cards[random_number];
 
-    for (int i = random_number; i < numCards - 1; ++i)
+    for (int i = random_number; i < numCards - 1; i++)
     {
         cards[i] = cards[i + 1];
     }
