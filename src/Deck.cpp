@@ -32,6 +32,7 @@ Card Deck::drawCard()
     std::uniform_int_distribution<int> distribution(0, numCards - 1);
 
     int random_number = distribution(rd);
+    std::mt19937 gen(rd());
     Card chosencard = cards[random_number];
 
     for (int i = random_number; i < numCards - 1; i++)
