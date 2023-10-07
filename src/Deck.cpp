@@ -15,6 +15,7 @@ Deck::Deck()
             cardIndex++;
         }
     }
+    srand(static_cast<unsigned>(time(0)));
 }
 Deck::~Deck()
 {
