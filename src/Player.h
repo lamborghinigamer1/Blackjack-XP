@@ -18,6 +18,8 @@ public:
     std::string Name();
     void addCard(Card card);
     std::string showHand();
+    int showCardIndex();
+    Card *getHand();
 };
 
 #endif

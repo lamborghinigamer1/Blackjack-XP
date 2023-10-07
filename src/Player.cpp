@@ -37,3 +37,13 @@ std::string Player::Name()
 {
     return this->name;
 }
+
+int Player::showCardIndex()
+{
+    return this->cardIndex;
+}
+
+Card* Player::getHand()
+{
+    return hand;
+}
