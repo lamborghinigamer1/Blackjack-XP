@@ -15,6 +15,6 @@ int main(int argc, char const *argv[])
     player.addCard(deck.drawCard());
     player.addCard(deck.drawCard());
     cout << player.Name() << " has:" << player.showHand() << endl;
-    cout << "score: " << Blackjack().scoreHandInt(player.getHand(), player.showCardIndex()) << endl;
+    cout << "score: " << Blackjack().scoreHand(player.getHand(), player.showCardIndex()) << endl;
     return 0;
 }
